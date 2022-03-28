@@ -2,7 +2,7 @@
 
 @section('container')
 
-    <h1 class="mb-5">Universitas</h1>
+    <h1 class="mb-5">Kampung Inggris</h1>
 
 <div class="container">
     <div class="row">
@@ -10,7 +10,7 @@
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <div class="position-absolute px-3 py-2 text-white" style="background-color:rgba(0, 0, 0, 0.7)">{{ $post->category->name }}</div>
-                    <img src="https://source.unsplash.com/500x250?{{ $post->category->name }}" class="card-img-top" alt="{{ $post->category->name }}">
+                    <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top" alt="{{ $post->category->name }}">
                     <div class="card-body">
                     <h5 class="card-title">{{  $post->title }}</h5>
                         <p>

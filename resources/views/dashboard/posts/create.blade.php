@@ -4,7 +4,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Create Blog, {{ auth()->user()->name }} </h1>
+        <h1 class="h2">Create Lembaga, {{ auth()->user()->name }} </h1>
         </div>
     </main>
 
@@ -12,7 +12,7 @@
         <form action="/dashboard/posts" method="post" class="mb-6" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="title" class="form-label">Nama Universitas</label>
+                <label for="title" class="form-label">Nama Lembaga</label>
                 <input type="text" class="form-control
                 @error('title') is-invalid
                 @enderror" id="title" name="title" required autofocus value="{{ old('title') }}">
@@ -69,7 +69,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="image" class="form-label">Logo</label>
+                <label for="image" class="form-label">Image</label>
                 <img class="img-preview img-fluid mb-3 col-sm-5">
                 <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
                     @error('image')

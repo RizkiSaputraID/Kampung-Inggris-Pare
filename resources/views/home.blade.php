@@ -7,12 +7,12 @@
             <div class="row">
                         <div class="col-lg-6 col-xl-5">
                             <div class="text-container">
-                                <div class="section-title text-dark font-weight-bold">Welcome to Kampus Fair</div>
-                                <h1 class="h1-large text-dark font-weight-bold">Website ini di gunakan sebagai media promosi lembaga universitas di indonesia</h1>
-                                <p class="p-large">Informasi mengenai website ini masih terbatas, dengan adanya Kampus Fair kami berharap dapat membantu calon-calon mahasiswa agar dapat memilih universitas faforit anda dan juga mengetahui secara langsung apa saja universitas yang ada di indonesia.
+                                <div class="section-title text-dark font-weight-bold">Welcome to Kampung Inggris </div>
+                                <h1 class="h1-large text-dark font-weight-bold">Website ini di gunakan sebagai media promosi Kampung Inggris Pare</h1>
+                                <p class="p-large">Informasi mengenai website ini masih terbatas, dengan adanya Kampung Inggris Pare kami berharap dapat membantu calon-calon siswa agar dapat memilih tempat kursus bahasa inggris faforit anda dan juga mengetahui secara langsung apa saja lembaga-lebanga kursus yang ada di kampung inggris.
                                     Silahkan dinilai dan berikan nilainya.</p>
                                 <a class="btn btn-success" href="/about">About Me</a>
-                                <a class="btn btn-primary" href="/posts">My University</a>
+                                <a class="btn btn-primary" href="/posts">Kampung Inggris Pare</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-xl-7">
@@ -30,7 +30,7 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-white mt-0">Saya tahu apa yang anda cari!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Mulai Dari Kampus Fair Kamu bisa mendapat apa yang kamu cari sekaligus yang kamu butuhkan, Berminat saya!</p>
+                    <p class="text-white-75 mb-4">Mulai Dari Kampung Inggris Pare Kamu bisa mendapat apa yang kamu cari sekaligus yang kamu butuhkan, Berminat saya!</p>
                     <a class="btn btn-light btn-xl" href="/home">Mulai!</a>
                 </div>
             </div>
@@ -46,21 +46,21 @@
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Trusted</h3>
-                        <p class="text-muted mb-0">Kampus Fair selalu menyajikan konten yang terpecaya!</p>
+                        <p class="text-muted mb-0">Kampung Inggris Pare selalu menyajikan konten yang terpecaya!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Up to Date</h3>
-                        <p class="text-muted mb-0">Kampus Fair selalu memperbarui semua isi dari Kampus Fair.</p>
+                        <p class="text-muted mb-0">Kampung Inggris Pare selalu memperbarui semua isi dari Kampus Fair.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Global</h3>
-                        <p class="text-muted mb-0">Kampus Fair akan Segera menuju tahap Global!</p>
+                        <p class="text-muted mb-0">Kampung Inggris Pare akan Segera menuju tahap Global!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -81,7 +81,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">Universitas Merdeka Malang</div>
+                            <div class="project-name">Genta English Course</div>
                         </div>
                     </a>
                 </div>
@@ -89,7 +89,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">Universitas Brawijaya</div>
+                            <div class="project-name">(BEC) Basic English Course</div>
                         </div>
                     </a>
                 </div>
@@ -97,7 +97,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">Universitas Kadiri</div>
+                            <div class="project-name">Titik Nol English Course</div>
                         </div>
                     </a>
                 </div>
@@ -105,7 +105,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">Universitas Negeri Malang</div>
+                            <div class="project-name">Global English Course</div>
                         </div>
                     </a>
                 </div>
@@ -113,7 +113,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">Institute Pertanian Bogor</div>
+                            <div class="project-name">Mr.Bob English Course</div>
                         </div>
                     </a>
                 </div>
@@ -121,7 +121,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
                         <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
                         <div class="portfolio-box-caption p-3">
-                            <div class="project-name">Sekolah Tinggi Teknologi Kedirgantaraan Yogyakarta</div>
+                            <div class="project-name">LC English Course</div>
                         </div>
                     </a>
                 </div>
@@ -131,7 +131,7 @@
 
     <section class="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mb-4">Lihat Semua Universitas Di Indonesia</h2>
+            <h2 class="mb-4">Lihat Semua Lembaga Kursus Bahasa Inggris Pare</h2>
             <a class="btn btn-light btn-xl" href="/posts">Kunjungi Saya!</a>
         </div>
     </section>

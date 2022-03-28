@@ -14,7 +14,7 @@
             <span class="navbar-toggler-icon"></span></button>
         <div class="container px-4 px-lg-5">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <a class="navbar">Kampus Fair</a>
+                    <a class="navbar">Kampung Inggris Pare</a>
                     @auth
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

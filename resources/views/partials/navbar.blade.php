@@ -14,12 +14,12 @@
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span></button>
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">My Web</a>
+            <a class="navbar-brand" href="#page-top">KampungInggrisKu</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="/home">Halaman</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/posts">Daftar Universitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/posts">Daftar Lembaga</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about">Kontak</a></li>
                 </ul>
 

@@ -22,14 +22,9 @@ class DatabaseSeeder extends Seeder
 
 
          Category::create([
-             'name' => 'Universitas Negeri',
-             'slug' => 'universitas-negeri'
+             'name' => 'English learning',
+             'slug' => 'english-learning'
             ]);
-
-            Category::create([
-                'name' => 'Universitas Swasta',
-                'slug' => 'universitas-swasta'
-        ]);
 
     }
 }

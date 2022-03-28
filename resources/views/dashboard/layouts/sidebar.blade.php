@@ -11,7 +11,7 @@
           <a class="nav-link {{ Request::is('dashboard/posts*') ? 'active' : '' }}"
           href="/dashboard/posts">
             <span data-feather="file"></span>
-            Daftar Universitas
+            Daftar Lembaga Kursus
           </a>
         </li>
 

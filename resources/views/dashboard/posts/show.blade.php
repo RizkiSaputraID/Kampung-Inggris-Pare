@@ -24,7 +24,8 @@
 
             <article class="my-3 fs-5">
                 {!! $post->body !!}
-
+                {!! $post->halaman !!}
+                {!! $post->notelp !!}
             </article>
 
         </div>

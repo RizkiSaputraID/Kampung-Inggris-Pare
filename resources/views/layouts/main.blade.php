@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title> My Web | {{ $title }} </title>
+    <title> KampungInggrisKu | {{ $title }} </title>
   </head>
   <body>
 
