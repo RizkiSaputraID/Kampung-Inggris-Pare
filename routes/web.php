@@ -10,7 +10,8 @@ use App\Http\Controllers\RegisterControler;
 use App\Http\Controllers\AccountController;
 use App\Models\Category;
 use App\Models\User;
-
+use App\Http\Controllers\PendaftaranController;
+use App\Models\pendaftaran;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,5 +69,7 @@ Route::get('/dashboard', function(){
 
 Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');
-
 Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('auth');
+
+Route::get('/pendaftaran', [PendaftaranController::class, 'index']);
+Route::post('/pendaftaran', [PendaftaranController::class, 'store']);

@@ -21,8 +21,11 @@
             {!! $post->halaman !!}
             {!! $post->notelp !!}
         </article>
-        {{-- <a href="/{{ $post->category->halaman }}" class="btn btn-success mb-5"><span data-feather="arrow-left"></span>Berkunjung Ke Website Universitas</a> --}}
         <a href="/posts" class="btn btn-success mb-5"><span data-feather="arrow-left"></span> Back to my blog</a>
+        {{-- <a href="/pendaftaran" class="btn btn-success mb-5" target="myframe"><span data-feather="arrow-left"></span> Daftar</a>
+        <a href="{!! $post->notelp !!}" class="btn btn-success mb-5"><span data-feather="arrow-left"></span> Daftar kursus</a> --}}
+        <a href="{{ url("$post->halaman")}}" class="btn btn-success mb-5" target="myframe" ><span data-feather="arrow-left"></span> Halaman Website</a>
+        
     </div>
 
 @endsection

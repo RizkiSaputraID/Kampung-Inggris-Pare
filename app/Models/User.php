@@ -47,4 +47,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class);
     }
+    public function pesanan()
+    {
+        return $this->hasMany('App\Models\Pesanan','user_id','id');
+    }
 }

@@ -16,19 +16,5 @@ class AccountController extends Controller
         ]);
     }
 
-    public function store(Request $request)
-    {
-        $validateData = $request->validate([
-            'name' => 'required|max:255',
-            'username' => 'required|max:255',
-            'email' => 'required|email:dns|unique:users',
-            'password' => 'required|min:5|max:255',
-        ]);
-
-        $validateData['password'] = bcrypt($validateData['password']);
-
-        User::create($validateData);
-
-        return redirect('/dashboard')->with('success', ' Registration Sucsessfull!');
-    }
+    
 }

@@ -14,6 +14,12 @@
             Daftar Lembaga Kursus
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ Request::is('dashboard/posts*') ? 'active' : ''}}"
+          href="/dashboard/account">
+            <span data-feather="user"></span>Account</a>
+        </li>
+      </ul>
 
 
     </div>
