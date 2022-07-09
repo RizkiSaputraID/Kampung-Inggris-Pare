@@ -15,9 +15,9 @@ class CreatePendaftaransTable extends Migration
     {
         Schema::create('pendaftarans', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('nama');
             $table->string('email');
-            $table->string('no_hp');
+            $table->string('nohp');
             $table->string('alamat');
             $table->string('kota');
             $table->string('provinsi');

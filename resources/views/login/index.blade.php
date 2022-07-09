@@ -38,9 +38,9 @@
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
             </form>
-            {{-- <small class="d-block text-center text-white-75 mt-3">
+            <small class="d-block text-center text-white-75 mt-3">
                 Not Registered ? <a href="http:/register" class="btn btn-primary">Register now!</a>
-            </small> --}}
+            </small>
           </main>
 
         </div>

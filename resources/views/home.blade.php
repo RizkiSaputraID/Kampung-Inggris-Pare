@@ -7,10 +7,10 @@
             <div class="row">
                         <div class="col-lg-6 col-xl-5">
                             <div class="text-container">
-                                <div class="section-title text-dark font-weight-bold">Welcome to Kampung Inggris </div>
-                                <h1 class="h1-large text-dark font-weight-bold">Website ini di gunakan sebagai media promosi Kampung Inggris Pare</h1>
+                                <div class="section-title text-dark font-weight-bold">Welcome to Kampung Inggris Ku</div>
+                                <h3 class="h1-large text-dark font-weight-bold">KampungInggrisKu adalah tempat pencarian informasi yang berhubungan dengan lebaga kursus yang ada di Kampung Inggris Pare</h3>
                                 <p class="p-large">Informasi mengenai website ini masih terbatas, dengan adanya Kampung Inggris Pare kami berharap dapat membantu calon-calon siswa agar dapat memilih tempat kursus bahasa inggris faforit anda dan juga mengetahui secara langsung apa saja lembaga-lebanga kursus yang ada di kampung inggris.
-                                    Silahkan dinilai dan berikan nilainya.</p>
+                                    .</p>
                                 <a class="btn btn-success" href="/about">About Me</a>
                                 <a class="btn btn-primary" href="/posts">Kampung Inggris Pare</a>
                             </div>
@@ -74,60 +74,7 @@
         </div>
     </section>
 
-    <div id="portfolio">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-name">Genta English Course</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-name">(BEC) Basic English Course</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-name">Titik Nol English Course</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-name">Global English Course</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-name">Mr.Bob English Course</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-name">LC English Course</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <section class="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-center">
@@ -140,7 +87,7 @@
 </header>
 
 <footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Kampus Fair</div></div>
+    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - KampungInggrisKu</div></div>
 </footer>
 
 @endsection

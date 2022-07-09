@@ -17,10 +17,11 @@ class PendaftaranController extends Controller
     }
     public function store(Request $request)
     {
+       
         $validateData = $request->validate([
-            'name' => 'required|max:255',
+            'nama' => 'required|max:255',
             'email' => 'required|email:dns|unique:users',
-            'no_hp' => 'required|max:255',
+            'nohp' => 'required|max:255',
             'alamat' => 'required|max:255',
             'kota' => 'required|max:255',
             'provinsi' => 'required|max:255',
@@ -29,7 +30,10 @@ class PendaftaranController extends Controller
         
         pendaftaran::create($validateData);
 
-        return redirect('/home')->with('success', ' Pendaftaran Sucsessfull!');
+        return redirect('/posts')->with('success', ' Pendaftaran Sucsessfull!');
 
     }
+
+    
+    
 }

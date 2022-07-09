@@ -29,7 +29,7 @@
 </div>
 
 <footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Kampus Fair</div></div>
+    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - KampungInggrisKu</div></div>
 </footer>
 
 @endsection

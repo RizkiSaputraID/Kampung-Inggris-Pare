@@ -18,14 +18,23 @@
 
         <article class="my-3">
             {!! $post->body !!}
-            {!! $post->halaman !!}
-            {!! $post->notelp !!}
+            <hr>
+            <p>
+               Halaman Website : {!! $post->halaman !!}
+            </p>
+            <br>
+            <p>
+               Notelp. : {!! $post->notelp !!}
+            </p>
         </article>
         <a href="/posts" class="btn btn-success mb-5"><span data-feather="arrow-left"></span> Back to my blog</a>
-        {{-- <a href="/pendaftaran" class="btn btn-success mb-5" target="myframe"><span data-feather="arrow-left"></span> Daftar</a>
-        <a href="{!! $post->notelp !!}" class="btn btn-success mb-5"><span data-feather="arrow-left"></span> Daftar kursus</a> --}}
+        <a href="/pendaftaran" class="btn btn-success mb-5" target="_blank"><span data-feather="arrow-left"></span> Daftar</a>
+        {{-- <a href="{!! $post->notelp !!}" class="btn btn-success mb-5"><span data-feather="arrow-left"></span> Daftar kursus</a> --}}
         <a href="{{ url("$post->halaman")}}" class="btn btn-success mb-5" target="myframe" ><span data-feather="arrow-left"></span> Halaman Website</a>
         
     </div>
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - KampungInggrisKu</div></div>
+    </footer>
 
 @endsection

@@ -9,5 +9,13 @@ class pendaftaran extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['name','email','no_hp','alamat','kota','provinsi','pekerjaan'];
+    protected $fillable = [
+        'nama',
+        'email',
+        'nohp',
+        'alamat',
+        'kota',
+        'provinsi',
+        'pekerjaan'
+    ];
 }

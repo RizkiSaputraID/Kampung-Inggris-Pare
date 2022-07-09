@@ -60,8 +60,8 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterControler::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterControler::class, 'store']);
 
-Route::post('/dashboard/account', [AccountController::class, 'store']);
 Route::get('/dashboard/account', [AccountController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/account/report', [AccountController::class, 'report'])->middleware('auth'); 
 
 Route::get('/dashboard', function(){
     return view('dashboard.index');
