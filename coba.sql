@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2022 at 10:24 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.14
+-- Waktu pembuatan: 04 Jul 2022 pada 12.02
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test_db`
+-- Database: `coba`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Struktur dari tabel `categories`
 --
 
 CREATE TABLE `categories` (
@@ -36,17 +36,16 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `categories`
+-- Dumping data untuk tabel `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `created_at`, `updated_at`) VALUES
-(1, 'Universitas Negeri', 'universitas-negeri', '2022-03-25 23:34:00', '2022-03-25 23:34:00'),
-(2, 'Universitas Swasta', 'universitas-swasta', '2022-03-25 23:34:00', '2022-03-25 23:34:00');
+(1, 'English learning', 'english-learning', '2022-06-30 01:12:39', '2022-06-30 01:12:39');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `failed_jobs`
+-- Struktur dari tabel `failed_jobs`
 --
 
 CREATE TABLE `failed_jobs` (
@@ -62,7 +61,7 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Struktur dari tabel `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -72,7 +71,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Dumping data untuk tabel `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -81,12 +80,16 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (5, '2021_12_11_113631_create_posts_table', 1),
-(6, '2022_01_05_090757_create_categories_table', 1);
+(6, '2022_01_05_090757_create_categories_table', 1),
+(7, '2022_06_30_061102_create_programs_table', 1),
+(8, '2022_06_30_061344_create_pesanans_table', 1),
+(9, '2022_06_30_061652_create_pesanan_details_table', 1),
+(10, '2022_06_30_094529_create_pendaftarans_table', 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Struktur dari tabel `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -98,7 +101,26 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `personal_access_tokens`
+-- Struktur dari tabel `pendaftarans`
+--
+
+CREATE TABLE `pendaftarans` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `no_hp` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alamat` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `kota` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `provinsi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pekerjaan` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `personal_access_tokens`
 --
 
 CREATE TABLE `personal_access_tokens` (
@@ -116,7 +138,7 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posts`
+-- Struktur dari tabel `posts`
 --
 
 CREATE TABLE `posts` (
@@ -136,17 +158,16 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `posts`
+-- Dumping data untuk tabel `posts`
 --
 
 INSERT INTO `posts` (`id`, `category_id`, `user_id`, `title`, `slug`, `image`, `halaman`, `notelp`, `excerpt`, `body`, `published_at`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 'UM', 'um', 'post-image/MvyuGZMd7ZM5D9jN3WtuByyi6EN9UNOWcOtllN6x.jpg', 'a', 'a', 'a', '<div>a</div>', NULL, '2022-03-25 23:35:13', '2022-03-26 01:31:15'),
-(2, 2, 1, 'uasdm', 'uasdm', 'post-images/A42eHxXRu30a9d7pizfP3EW2CH0nFv3hnnKxCW05.jpg', 'ad', '31ews', 'adsd', '<div>adsd</div>', NULL, '2022-03-26 01:40:57', '2022-03-26 01:40:57');
+(1, 1, 1, 'Titik Nol english Course', 'titik-nol-english-course', 'post-image/LvF4TTq2CU2dh7yvXzzgzM83MR22H5Qgkbn9dib1.jpg', 'TN.com', '12', 'Haya Coba&nbsp;6.2 Penjelasan Sistematika Tugas Akhir Halaman Sampul/Cover Depan Proposal Tugas Akhir atau Skripsi, judul Proposal Tugas Akhir atau Skripsi, Lambang/ logo Universitas Merdeka Malang, N...', '<div>Haya Coba<br>&nbsp;6.2 Penjelasan Sistematika Tugas Akhir Halaman Sampul/Cover Depan Proposal Tugas Akhir atau Skripsi, judul Proposal Tugas Akhir atau Skripsi, Lambang/ logo Universitas Merdeka Malang, Nama lengkap dan Nomor Induk Mahasiswa (NIM), diikuti dengan nama Program, Fakultas, Universitas dan waktu proposal tugas akhir atau skripsi diajukan. Jenis kertas Bufallo dengan warna Biru Muda sesuai program studi dengan tinta hitam dan pembatas antar bab berwarna sesuai program studi. Halaman Judul/Sampul Dalam Halaman judul memuat: judul, Lambang/Logo Universitas Merdeka Malang, maksud proposal yaitu “Diajukan untuk Penelitian Tugas Akhir / Skripsi pada Program DIII/S1 Sistem Informasi Universitas Merdeka Malang”, Nama dan NIM, diikuti dengan nama Program Studi, Fakultas, Universitas dan waktu proposal tugas akhir diajukan. Lembar Persetujuan Halaman ini berisi persetujuan Dosen Pembimbing Lembar Pengesahan (Lampiran 9)&nbsp;<br><br></div>', NULL, '2022-06-30 02:13:58', '2022-07-02 23:33:10');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -156,24 +177,26 @@ CREATE TABLE `users` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alamat` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `no_hp` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'rizki', 'test', 'rizkipare9@gmail.com', NULL, '$2y$10$2VgUlopTkBMKHvxGfHRTNuMlDA1l5kek4U8gGAzndIFEX6igyoxMO', NULL, '2022-03-25 23:34:29', '2022-03-25 23:34:29');
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `email_verified_at`, `password`, `alamat`, `no_hp`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'rizki', 'rizkipare12', 'rizki@gmail.com', NULL, '$2y$10$a0NYp7QgdktbABj6383hz.xW5u8rZNNi.NP2x94ejo4n6qznh8uTm', NULL, NULL, NULL, '2022-06-30 02:11:17', '2022-06-30 02:11:17');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `categories`
+-- Indeks untuk tabel `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
@@ -181,26 +204,32 @@ ALTER TABLE `categories`
   ADD UNIQUE KEY `categories_slug_unique` (`slug`);
 
 --
--- Indexes for table `failed_jobs`
+-- Indeks untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `migrations`
+-- Indeks untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `password_resets`
+-- Indeks untuk tabel `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `personal_access_tokens`
+-- Indeks untuk tabel `pendaftarans`
+--
+ALTER TABLE `pendaftarans`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
   ADD PRIMARY KEY (`id`),
@@ -208,14 +237,14 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
--- Indexes for table `posts`
+-- Indeks untuk tabel `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `posts_slug_unique` (`slug`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
@@ -223,44 +252,50 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT untuk tabel `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `failed_jobs`
+-- AUTO_INCREMENT untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `personal_access_tokens`
+-- AUTO_INCREMENT untuk tabel `pendaftarans`
+--
+ALTER TABLE `pendaftarans`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `posts`
+-- AUTO_INCREMENT untuk tabel `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
